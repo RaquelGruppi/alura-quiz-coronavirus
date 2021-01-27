@@ -12,8 +12,11 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     display: flex;
     flex-direction: column;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: ${({ theme }) => theme.colors.contrastText};
+  }
+  h1 {
+    font-family: 'Alegreya', serif;
   }
   html, body {
     min-height: 100vh;
@@ -33,7 +36,8 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet" />
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />

@@ -7,7 +7,7 @@ const Widget = styled.div`
   border-radius: 4px;
   overflow: hidden;
   h1, h2, h3 {
-    font-size: 16px;
+    font-size: 19px;
     font-weight: 700;
     line-height: 1;
     margin-bottom: 0;
@@ -15,7 +15,8 @@ const Widget = styled.div`
   p {
     font-size: 14px;
     font-weight: 400;
-    line-height: 1;
+    line-height: 18px;
+    color: ${({ theme }) => theme.colors.Text};
   }
 `;
 

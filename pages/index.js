@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
+import Button from '../src/components/Button';
+import Card from '../src/components/Card';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
+import Input from '../src/components/Input';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizLogo from '../src/components/QuizLogo';
 import Widget from '../src/components/Widget';
@@ -53,17 +56,32 @@ export default function Home() {
           <Widget.Content>
             <p>Teste seus conhecimento sobre o coronavírus</p>
             <form onSubmit={handleSubmit}>
-              <input onChange={handleInput} placeholder ="Digite seu nome para jogar"/>
-              <button type="submit" disabled={name.length === 0}>
+              <Input onChange={handleInput} placeholder ="Digite seu nome para jogar"/>
+              <Button type="submit" disabled={name.length === 0}>
                 Jogar
-              </button>
+              </Button>
             </form>
           </Widget.Content>
         </Widget>
         <Widget>
           <Widget.Content>
             <h1>Quizes da galera</h1>
-            <p>Texto</p>
+            <p>Dá uma olhada nesses quizes incríveis que o pessoal da imersão NextJs fez:</p>
+            <Card>
+              <a href="https://aluraquiz-vacinacao.vercel.app/" target="_blank" >
+                Vacina quiz
+              </a>
+            </Card>
+            <Card>
+              <a href="https://aluraquiz-coffee.leonardot07.vercel.app/" target="_blank" >
+                Café quiz
+              </a>
+            </Card>
+            <Card>
+              <a href="https://imersao-react-alura.malufell.vercel.app/" target="_blank" >
+                How I met your mother quiz
+              </a>
+            </Card>
           </Widget.Content>
         </Widget>
         <Footer />
