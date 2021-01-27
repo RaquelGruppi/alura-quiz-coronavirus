@@ -5,13 +5,13 @@ const QuizBackground = styled.div`
   flex: 1;
   background-color: ${({ theme }) => theme.colors.Bg};
   position: relative;
-  
+
   &:after {
     content: "";
     background-size: auto 500px;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
     background-position: center 0;
-    background-image: url(${({ backgroundImage }) => backgroundImage}); */
+    background-image: url(${({ backgroundImage }) => backgroundImage});
     display: block;
     width: 550px;
     height: 275px;
@@ -39,7 +39,6 @@ const QuizBackground = styled.div`
     transform: translateY(-50%);
     clip-path: circle(270px);
   }
-
   *:first-child {
       position: relative;
       z-index: 10;
